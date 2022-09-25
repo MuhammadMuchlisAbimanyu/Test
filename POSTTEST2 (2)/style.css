@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(image/carousel-1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: chocolate;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+/* #160606 */
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    color: #fff;
+}
+.button-home{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button-home:hover{
+    border: 1px solid chocolate ;
+    background: chocolate;
+    transition: 0.5s;
+}
+@media(max-width : 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .naz-links{
+        position: absolute;
+        background: chocolate;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    
+}
+
+/* .overlay-top::before,
+.overlay-bottom::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 15px;
+  left: 0;
+  z-index: 1;
+}
+
+.overlay-top::before {
+  top: -1px;
+  background: url(../img/overlay-top.png);
+}
+
+.overlay-bottom::after {
+  bottom: -1px;
+  background: url(../img/overlay-bottom.png);
+} */
+
+.title-white-bg{
+    color: #160606;
+}
+
+.about{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: chocolate;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+#about-coffee{
+    width: 200px;
+}
+.about-col{
+    flex-basis: 60%;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+}
+
+@media(max-width : 700px){
+    .about h1{
+        font-size: 20px;
+    }
+    .about h2{
+        font-size: 15px;
+    }
+}
+.menu{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.card-menu img {
+    width: 160px;
+    border-radius: 5px;
+}
+.menu-col{
+    flex-basis: 60%;
+    margin-bottom: 5%;
+    box-sizing: border;
+    padding: 20px 12px;
+}
+.card-menu {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.8s;
+    
+}
+.button-menu {
+    display: inline-block;
+    text-decoration: none;
+    color:  #160606;
+    border: 1px solid #160606;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button-menu:hover{
+    border: 1px solid chocolate ;
+    background: chocolate;
+    transition: 0.5s;
+}
+@media(max-width : 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    background-color: #160606;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.footer h1{
+    color: #fff;
+    font-size: 20px;
+}
+
+@media(max-width : 700px){
+    .footer h1{
+        color: #fff;
+        font-size: 15px;
+    }
+}
