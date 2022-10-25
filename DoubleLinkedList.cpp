@@ -39,13 +39,13 @@ void showFirst(Node *head){
         system("pause");
     }
 }
-void showLast(Node *head){
-    if (head == NULL){
+void showLast(Node *tail){
+    if (tail == NULL){
         cout << "LinkedList Kosong" << endl;
         system("pause");
         return;
     } else {
-        Node *temp = head;
+        Node *temp = tail;
         int indeks;
         for (indeks = 0; temp != NULL; indeks++){
             cout << "[" << indeks+1 << "]" << endl;
@@ -73,9 +73,10 @@ void insertFirst(Node **head, Node **tail){
 		cout << "Tambah Data Berhasil" << endl;
 		return;
 	}
-	newNode->next = *head;
-	(*head)->prev = newNode;
-	*head = newNode;
+		newNode->next = *head;
+		(*head)->prev = newNode;
+		*head = newNode;
+	panjangList++;
     cout << "Data telah tersimpan." << endl;
     system("pause");
 }
